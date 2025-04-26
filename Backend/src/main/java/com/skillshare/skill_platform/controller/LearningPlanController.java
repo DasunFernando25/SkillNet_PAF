@@ -45,9 +45,9 @@ public class LearningPlanController {
     return learningPlanService.updateById(userId, rq, learningPlanId);
   }
 
-  // @DeleteMapping("/users/{user-id}/learning-plans/{learning-plan-id}")
-  // public void deleteById(@PathVariable("user-id") String userId,
-  //     @PathVariable("learning-plan-id") String learningPlanId) throws ResourceNotFoundException {
-  //   learningPlanService.delete(userId, learningPlanId);
-  // }
+  @DeleteMapping("/users/{user-id}/learning-plans/{learning-plan-id}")
+  public void deleteById(@PathVariable("user-id") String userId,
+      @PathVariable("learning-plan-id") String learningPlanId) throws ResourceNotFoundException {
+    learningPlanService.delete(userId, learningPlanId);
+  }
 }

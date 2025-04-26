@@ -1,11 +1,11 @@
-package com.skillshare.skill_platform.repository;
+// package com.skillshare.skill_platform.repository;
 
 
 
-import org.springframework.data.mongodb.repository.MongoRepository;
+// import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.skillshare.skill_platform.entity.UserProfile;
+// import com.skillshare.skill_platform.entity.UserProfile;
 
-public interface UserProfileRepository extends MongoRepository<UserProfile, String> {
-    UserProfile findByUserId(String userId);
-}
+// public interface UserProfileRepository extends MongoRepository<UserProfile, String> {
+//     UserProfile findByUserId(String userId);
+// }
